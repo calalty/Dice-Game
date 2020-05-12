@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
 
 html,
 body {
@@ -15,14 +16,40 @@ body {
 
 h1 {
     color: #DE1A1A;
-    font-family: 'Amatic SC', cursive;
-    font-size: 5em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5em;
 }
 
 button {
     background-color: #DE1A1A;
     color:  #E8EBF7;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 1.75em;
     border-radius: 25%;
+    margin-left: 1.5em;
+}
+
+#roll:hover {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #DE1A1A;
+    background-color: #E8EBF7;
+    transition: margin 0.3s;
+    transition: background-color 0.7s, color 0.7s;
+    border-color: #DE1A1A;
+}
+
+#new-game:hover {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #DE1A1A;
+    background-color: #E8EBF7;
+    transition: margin 0.3s;
+    transition: background-color 0.7s, color 0.7s;
+    border-color: #DE1A1A;
+}
+
+
+button:focus {
+    outline: none;
 }
