@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
 
-.wrapper {
-content: "";
-    display: table;
-    clear: both;
+.divider{
+    width:25px;
+    height:auto;
+    display:inline-block;
 }
 
 html,
@@ -24,11 +24,18 @@ h1 {
     color: #393e41;
     font-family: 'Press Start 2P', cursive;
     font-size: 2.5em;
+    font-weight:bolder;
+    text-shadow: 1px 1px #66b3ba,
+    2px 2px #EB4D4D,
+     3px 3px #66b3ba,
+     4px 4px #EB4D4D;
 }
 
 #roll {
-    background-color: #DE1A1A;
+    background-color:#EB4D4D;
     color:  #E8EBF7;
+    text-shadow: 0 0 1px #393e41, 1.25px 1.25px #393e41;
+    box-shadow: 0px 3px 3px #393e41;
     font-family: 'Dhurjati', sans-serif;
     font-size: 1.75em;
     border-radius: 25%;
@@ -37,18 +44,20 @@ h1 {
 #roll:hover {
     text-transform: uppercase;
     font-weight: 500;
-    text-shadow: 0 0 1px black, 0 0 1px black;
-    box-shadow: 0 0 10px black;
-    color: #DE1A1A;
+    text-shadow: 0 0 1px #393e41, 1.25px 1.25px #393e41;
+    box-shadow: 0 0 10px #393e41;
+    color: #EB4D4D;
     background-color: #E8EBF7;
     transition: margin 0.3s;
     transition: background-color 0.7s, color 0.7s;
-    border-color: #DE1A1A;
+    border-color: #EB4D4D;
 }
 
 #roll2 {
+    text-shadow: 0 0 1px #393e41, 1.25px 1.25px #393e41;
     background-color: #66b3ba;
     color:  #E8EBF7;
+    box-shadow: 0px 3px 3px #393e41;
     font-family: 'Dhurjati', sans-serif;
     font-size: 1.75em;
     border-radius: 25%;
@@ -57,8 +66,8 @@ h1 {
 #roll2:hover {
     text-transform: uppercase;
     font-weight: 500;
-    text-shadow: 0 0 1px black, 0 0 1px black;
-    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 1px #393e41, 1.25px 1.25px #393e41;
+    box-shadow: 0 0 10px #393e41;
     color: #66b3ba;
     background-color: #E8EBF7;
     transition: margin 0.3s;
@@ -69,16 +78,19 @@ h1 {
 #new-game {
     background-color: #393e41;
     color:  #E8EBF7;
+    text-shadow: 1px 1px  #EB4D4D, 1.25px 1.25px #66b3ba;
+    box-shadow: 0px 3px 3px #393e41;
     font-family: 'Dhurjati', sans-serif;
-    font-size: 1.75em;
+    font-size: 2em;
     border-radius: 25%;
+    width: 150px;
 }
 
 #new-game:hover {
     text-transform: uppercase;
     font-weight: 500;
-    text-shadow: 0 0 1px black, 0 0 1px black;
-    box-shadow: 0 0 10px black;
+    text-shadow: 1px 1px #66b3ba, 1.25px 1.25px #EB4D4D;
+    box-shadow: 0 0 10px #393e41;
     color: #393e41;
     background-color: #E8EBF7;
     transition: margin 0.3s;
@@ -106,6 +118,7 @@ button:focus {
     letter-spacing: 2px;
     font-weight: 100;
     margin-top: 0.75em;
+    text-shadow: 2px 2px#EB4D4D;
 }
 
 #score  {
@@ -114,6 +127,7 @@ font-size: 80px;
 font-weight: 100;
 color: #EB4D4D;
 margin-top: -0.75em;
+text-shadow: 2px 2px #393e41;
 }
 
 
@@ -125,6 +139,7 @@ margin-top: -0.75em;
     letter-spacing: 2px;
     font-weight: 100;
     margin-top: 0.75em;
+    text-shadow: 2px 2px #66b3ba;
 }
 
 #score2  {
@@ -133,4 +148,18 @@ font-size: 80px;
 font-weight: 100;
 color: #66b3ba;
 margin-top: -0.75em;
+text-shadow: 2px 2px #393e41;
+}
+
+
+#dice-image { 
+border-color: #393e41;
+border-radius: 2.5em;
+filter: saturate(30%);
+filter: invert(80%);
+filter: grayscale(95%);
+mix-blend-mode: exclusion;
+image-rendering: crisp-edges;
+height: 10em;
+width: 10em;
 }
