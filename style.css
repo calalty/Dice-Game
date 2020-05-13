@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
 
+.wrapper {
+content: "";
+    display: table;
+    clear: both;
+}
+
 html,
 body {
     background-color: #E8EBF7;
@@ -15,41 +21,116 @@ body {
 }
 
 h1 {
-    color: #DE1A1A;
+    color: #393e41;
     font-family: 'Press Start 2P', cursive;
     font-size: 2.5em;
 }
 
-button {
+#roll {
     background-color: #DE1A1A;
     color:  #E8EBF7;
     font-family: 'Dhurjati', sans-serif;
     font-size: 1.75em;
     border-radius: 25%;
-    margin-left: 1.5em;
 }
 
 #roll:hover {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    box-shadow: 0 0 10px black;
     color: #DE1A1A;
     background-color: #E8EBF7;
     transition: margin 0.3s;
     transition: background-color 0.7s, color 0.7s;
     border-color: #DE1A1A;
+}
+
+#roll2 {
+    background-color: #66b3ba;
+    color:  #E8EBF7;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 1.75em;
+    border-radius: 25%;
+}
+
+#roll2:hover {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    box-shadow: 0 0 10px black;
+    color: #66b3ba;
+    background-color: #E8EBF7;
+    transition: margin 0.3s;
+    transition: background-color 0.7s, color 0.7s;
+    border-color: #66b3ba;
+}
+
+#new-game {
+    background-color: #393e41;
+    color:  #E8EBF7;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 1.75em;
+    border-radius: 25%;
 }
 
 #new-game:hover {
     text-transform: uppercase;
-    font-weight: 300;
-    color: #DE1A1A;
+    font-weight: 500;
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    box-shadow: 0 0 10px black;
+    color: #393e41;
     background-color: #E8EBF7;
     transition: margin 0.3s;
     transition: background-color 0.7s, color 0.7s;
-    border-color: #DE1A1A;
+    border-color: #393e41;
 }
-
 
 button:focus {
     outline: none;
+}
+
+.player-panel {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#player {
+    color: #393e41;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 0.75em;
+}
+
+#score  {
+font-family: 'Dhurjati', sans-serif;
+font-size: 80px;
+font-weight: 100;
+color: #EB4D4D;
+margin-top: -0.75em;
+}
+
+
+#player2 {
+    color: #393e41;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 0.75em;
+}
+
+#score2  {
+font-family: 'Dhurjati', sans-serif;
+font-size: 80px;
+font-weight: 100;
+color: #66b3ba;
+margin-top: -0.75em;
 }
