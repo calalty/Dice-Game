@@ -6,6 +6,7 @@ let score = document.getElementById("score");
 let image = document.getElementById("dice-image");
 let player2 = document.getElementById("player2");
 let score2 = document.getElementById("score2");
+let gameRule = document.getElementById("game-rule")
 
 image.style.visibility = ('hidden') // hides dice at the start
 

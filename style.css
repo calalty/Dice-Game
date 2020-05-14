@@ -31,6 +31,17 @@ h1 {
      4px 4px #EB4D4D;
 }
 
+#game-rule {
+    color:  #393e41;
+    font-weight: bolder;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: -2em;
+    margin-top: -0.5em;
+    animation: colorRotate 3s linear 0s infinite;
+    text-shadow: 0 0 1.5px #393e41, 1.75px 1.75px #393e41;
+}
+
 #roll {
     background-color:#EB4D4D;
     color:  #E8EBF7;
