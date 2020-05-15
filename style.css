@@ -38,6 +38,7 @@ h1 {
     font-size: 2.5em;
     margin-bottom: -2em;
     margin-top: -0.5em;
+    padding: 1em;
     animation: colorRotate 3s linear 0s infinite;
     text-shadow: 0 0 1.5px #393e41, 1.75px 1.75px #393e41;
 }
@@ -134,7 +135,6 @@ button:focus {
 	flex-direction: row;
     text-align: center;
     margin-top: 4em;
-    table-layout: fixed;
 }
 
 .divider-1{
