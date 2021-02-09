@@ -41,24 +41,12 @@ roll.onclick = () => {
 
     image.style.visibility = ('visible')
 
-    if (numberOnDice === 1) {
-        score.innerHTML = 1
-        image.src = "dice1.png"
-    } else if (numberOnDice === 2) {
-        score.innerHTML = 2
-        image.src = "dice2.png"
-    } else if (numberOnDice === 3) {
-        score.innerHTML = 3
-        image.src = "dice3.png"
-    } else if (numberOnDice === 4) {
-        score.innerHTML = 4
-        image.src = "dice4.png"
-    } else if (numberOnDice === 5) {
-        score.innerHTML = 5
-        image.src = "dice5.png"
-    } else if (numberOnDice === 6) {
-        score.innerHTML = 6
-        image.src = "dice6.png"
+    for (let num = 0; num < numbers.length; num++) {
+
+        if (numberOnDice === numbers[num]) {
+            score.innerHTML = numbers[num]
+            image.src = `dice${numbers[num]}.png`
+        }
     }
 
     if (totalScore <= 30) {
@@ -94,26 +82,14 @@ roll2.onclick = () => {
 
     image.style.visibility = ('visible')
 
-    if (numberOnDice2 === 1) {
-        score2.innerHTML = 1
-        image.src = "dice1.png"
-    } else if (numberOnDice2 === 2) {
-        score2.innerHTML = 2
-        image.src = "dice2.png"
-    } else if (numberOnDice2 === 3) {
-        score2.innerHTML = 3
-        image.src = "dice3.png"
-    } else if (numberOnDice2 === 4) {
-        score2.innerHTML = 4
-        image.src = "dice4.png"
-    } else if (numberOnDice2 === 5) {
-        score2.innerHTML = 5
-        image.src = "dice5.png"
-    } else if (numberOnDice2 === 6) {
-        score2.innerHTML = 6
-        image.src = "dice6.png"
-    }
+    for (let num = 0; num < numbers.length; num++) {
 
+        if (numberOnDice2 === numbers[num]) {
+            score2.innerHTML = numbers[num]
+            image.src = `dice${numbers[num]}.png`
+        }
+    }
+ 
     if (totalScore2 <= 30) {
         player2.innerHTML = ('Player 2')
         player.innerHTML = ('Player 1')
